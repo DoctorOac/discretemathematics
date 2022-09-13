@@ -1,0 +1,34 @@
+"""Take input n find location of last even integer or returns 0 if none exist"""
+
+import random
+
+
+number_list = []
+
+
+#Create a list of random integers 1-100.
+variable = 1
+while variable < 10:
+    rand_num = random.randint(1,100)
+    variable = variable + 1
+    number_list.append(rand_num)
+   
+
+
+#Take the random integers list and sort out the even numbers into their own separate list.
+    even_list = []
+
+    for number in number_list:
+        if (number % 2) == 0:
+            even_list.append(number)
+    
+
+
+#Sort the list so the highest value, even number is at the begining of our list and can be easily extracted.
+    even_list.sort(reverse=True)
+    
+
+print('This is the even list: ', even_list)
+print('Our highest even value from the list is: ', even_list[0])
+
+
