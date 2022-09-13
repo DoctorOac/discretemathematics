@@ -1,0 +1,54 @@
+
+
+#Rule One
+
+'''def rule_one():
+    x = 1
+    y = 2
+    
+    i = x + y
+
+    return(print('Your answer is: ', i))
+
+rule_one()'''
+
+
+
+numbers = range(1, 35)
+
+sequence_of_numbers = []
+for number in numbers:
+   if number % 5 in (1, 2):
+      sequence_of_numbers.append(number)
+
+print(sequence_of_numbers)
+
+
+Jerry_list = range(1,20)
+
+even_num_list = []
+for number in Jerry_list:
+    if (number % 2) == 0:
+        even_num_list.append(number)
+
+print(even_num_list)
+
+
+
+Mike_list = range(30,80)
+
+mike_num_list = []
+for number in Mike_list:
+    number = number + 4
+    mike_num_list.append(number)
+
+
+print(mike_num_list)
+
+
+
+#elif rule_num = 2
+
+#elif rule_num = 3
+
+#else: rule_num = 4
