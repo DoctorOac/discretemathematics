@@ -2,15 +2,37 @@
 Function should return 0 if there are no even integers"""
 import random
 
+#Creating empty lists for our integers to be stored
 num_list = []
+new_list = []
 
+#This fills our num_list with random integers
 for integer in range(1,50):
     new_num = random.randint(1,100)
     num_list.append(new_num)
 
+#This print statement is to double check that creating our num_list works.
 print(num_list)
 
+#This function iterates through all the number in the num_list and creates a second list new_list.
 for number in num_list:
+
+#If a number is even, it will add it to the new_list and then sort the numbers from greatest to least.
     if number % 2 == 0:
-        num_list.append(number)
-        print(num_list)
+        new_list.append(number)
+        new_list.sort(reverse = True)
+        largest_int = new_list[0]
+#Because the list is sorted, the first varible of the list is our largest integer.
+
+#In case our list of random doesn't have ANY even numbers, the program will return 0
+        if len(new_list) == 0:
+            print(0)
+
+        else:
+            break
+
+#Now our program can print our results. We print the new_list to confirm there are just even numbers there.
+print(new_list)
+
+#Now we print the largest_int because that is what our program is trying to find.
+print(largest_int)
