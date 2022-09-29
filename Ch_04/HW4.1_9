@@ -10,3 +10,11 @@ g) -1 divided by 3?
 h)4 divided by one'''
 
 print('Hello World')
+
+being_divided = input("What do you want to divide:")
+divided_by = input("What do you want it divided by:")
+
+quotient = int(being_divided) // int(divided_by)
+remainder = int(being_divided) % int(divided_by)
+
+print('Your quotient is:', quotient, "Your remainder: ", remainder)
