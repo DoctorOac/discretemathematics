@@ -1,0 +1,12 @@
+'''What time does a 12-hour clock read
+a) 80 hours after it reads 11:00
+b) 40 hours before it reads 12:00?
+c) 100 hours after it reads 6:00?'''
+
+#make a list of all the hours to iterate through
+list = []
+for number in range(1,13,1):
+    list.append(number)
+#confirming that we have a list of 1-12 hours
+print(list)
+
