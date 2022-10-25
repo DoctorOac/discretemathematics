@@ -1,5 +1,3 @@
-print('Hello World')
-
 
 """Assume that a chooclate bar consists of n squares. Assuming that only one piece can be broken at a time. Determine how many breaks you must
 successively make to have n number of breaks"""
